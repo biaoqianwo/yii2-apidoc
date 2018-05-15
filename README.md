@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
+    <a href="https://github.com/biaoqianwo" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
     <h1 align="center">API documentation generator for Yii 2</h1>
@@ -10,9 +10,9 @@ This extension provides an API documentation generator for the [Yii framework 2.
 
 For license information check the [LICENSE](LICENSE.md)-file.
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-apidoc/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-apidoc)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-apidoc/downloads.png)](https://packagist.org/packages/yiisoft/yii2-apidoc)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-apidoc.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-apidoc)
+[![Latest Stable Version](https://poser.pugx.org/biaoqianwo/yii2-apidoc/v/stable.png)](https://packagist.org/packages/biaoqianwo/yii2-apidoc)
+[![Total Downloads](https://poser.pugx.org/biaoqianwo/yii2-apidoc/downloads.png)](https://packagist.org/packages/biaoqianwo/yii2-apidoc)
+[![Build Status](https://travis-ci.org/biaoqianwo/yii2-apidoc.svg?branch=master)](https://travis-ci.org/biaoqianwo/yii2-apidoc)
 
 
 Installation
@@ -29,10 +29,10 @@ composer require --prefer-dist biaoqianwo/yii2-apidoc
 The above command may not work on an existing project due to version conflicts that need to be resolved, so it is preferred to add the package manually to the require section of your composer.json:
 
 ```json
-"yiisoft/yii2-apidoc": "~2.1.2"
+"biaoqianwo/yii2-apidoc": "~2.1.3"
 ```
 
-afterwards run `composer update`. You may also run `composer update yiisoft/yii2-apidoc cebe/markdown` if you want to avoid updating unrelated packages.
+afterwards run `composer update`. You may also run `composer update biaoqianwo/yii2-apidoc cebe/markdown` if you want to avoid updating unrelated packages.
 
 
 Usage
@@ -71,9 +71,9 @@ docs to enable links between your classes and framework classes. This also allow
 for your classes that extend from the framework.
 Use the following command to generate combined api docs:
 
-    ./vendor/bin/apidoc api ./vendor/yiisoft/yii2,. docs/json --exclude="docs,vendor"
+    ./vendor/bin/apidoc api ./vendor/biaoqianwo/yii2,. docs/json --exclude="docs,vendor"
     
-This will read the source files from `./vendor/yiisoft/yii2` directory and `.` which is the current directory (you may replace this with the location of your code if it is not in the current working directory).
+This will read the source files from `./vendor/biaoqianwo/yii2` directory and `.` which is the current directory (you may replace this with the location of your code if it is not in the current working directory).
 
 ### Advanced usage
 
@@ -84,8 +84,8 @@ in different languages (like it is done on yiiframework.com):
 #!/bin/sh
 
 # set these paths to match your environment
-YII_PATH=~/dev/yiisoft/yii2
-APIDOC_PATH=~/dev/yiisoft/yii2/extensions/apidoc
+YII_PATH=~/dev/biaoqianwo/yii2
+APIDOC_PATH=~/dev/biaoqianwo/yii2/extensions/apidoc
 OUTPUT=yii2docs
 
 cd $APIDOC_PATH
